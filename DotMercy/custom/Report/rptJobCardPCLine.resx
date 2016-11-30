@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="mercedesdb.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>select "JobCardTemplateProcesses"."id" as "id", "JobCardTemplateProcesses"."JobCardTemplateId"
+       as "JobCardTemplateId", "JobCardTemplateProcesses"."AssemblySectionId" as "AssemblySectionId",
+       "JobCardTemplateProcesses"."StationNum" as "StationNum", "JobCardTemplateProcesses"."StationName"
+       as "StationName", "JobCardTemplateProcesses"."NumOfProcesses" as "NumOfProcesses",
+       "JobCardTemplateProcesses"."ProcessNum1" as "ProcessNum1", "JobCardTemplateProcesses"."ProcessName1"
+       as "ProcessName1", "JobCardTemplateProcesses"."TextOnJobCard1" as "TextOnJobCard1",
+       "JobCardTemplateProcesses"."StampNum1" as "StampNum1", "JobCardTemplateProcesses"."IsInvalid1"
+       as "IsInvalid1", "JobCardTemplateProcesses"."ProcessNum2" as "ProcessNum2",
+       "JobCardTemplateProcesses"."ProcessName2" as "ProcessName2",
+       "JobCardTemplateProcesses"."TextOnJobCard2" as "TextOnJobCard2",
+       "JobCardTemplateProcesses"."StampNum2" as "StampNum2", "JobCardTemplateProcesses"."IsInvalid2"
+       as "IsInvalid2", "JobCardTemplateProcesses"."ProcessNum3" as "ProcessNum3",
+       "JobCardTemplateProcesses"."ProcessName3" as "ProcessName3",
+       "JobCardTemplateProcesses"."TextOnJobCard3" as "TextOnJobCard3",
+       "JobCardTemplateProcesses"."StampNum3" as "StampNum3", "JobCardTemplateProcesses"."IsInvalid3"
+       as "IsInvalid3", "JobCardTemplateProcesses"."ProcessNum4" as "ProcessNum4",
+       "JobCardTemplateProcesses"."ProcessName4" as "ProcessName4",
+       "JobCardTemplateProcesses"."TextOnJobCard4" as "TextOnJobCard4",
+       "JobCardTemplateProcesses"."StampNum4" as "StampNum4", "JobCardTemplateProcesses"."IsInvalid4"
+       as "IsInvalid4", "JobCardTemplateProcesses"."ProcessNum5" as "ProcessNum5",
+       "JobCardTemplateProcesses"."ProcessName5" as "ProcessName5",
+       "JobCardTemplateProcesses"."TextOnJobCard5" as "TextOnJobCard5",
+       "JobCardTemplateProcesses"."StampNum5" as "StampNum5", "JobCardTemplateProcesses"."IsInvalid5"
+       as "IsInvalid5", "JobCardTemplateProcesses"."ProcessNum6" as "ProcessNum6",
+       "JobCardTemplateProcesses"."ProcessName6" as "ProcessName6",
+       "JobCardTemplateProcesses"."TextOnJobCard6" as "TextOnJobCard6",
+       "JobCardTemplateProcesses"."StampNum6" as "StampNum6", "JobCardTemplateProcesses"."IsInvalid6"
+       as "IsInvalid6", "JobCardTemplateProcesses"."ProcessNum7" as "ProcessNum7",
+       "JobCardTemplateProcesses"."ProcessName7" as "ProcessName7",
+       "JobCardTemplateProcesses"."TextOnJobCard7" as "TextOnJobCard7",
+       "JobCardTemplateProcesses"."StampNum7" as "StampNum7", "JobCardTemplateProcesses"."IsInvalid7"
+       as "IsInvalid7", "JobCardTemplateProcesses"."ProcessNum8" as "ProcessNum8",
+       "JobCardTemplateProcesses"."ProcessName8" as "ProcessName8",
+       "JobCardTemplateProcesses"."TextOnJobCard8" as "TextOnJobCard8",
+       "JobCardTemplateProcesses"."StampNum8" as "StampNum8", "JobCardTemplateProcesses"."IsInvalid8"
+       as "IsInvalid8", "JobCardTemplateProcesses"."ProcessNum9" as "ProcessNum9",
+       "JobCardTemplateProcesses"."ProcessName9" as "ProcessName9",
+       "JobCardTemplateProcesses"."TextOnJobCard9" as "TextOnJobCard9",
+       "JobCardTemplateProcesses"."StampNum9" as "StampNum9", "JobCardTemplateProcesses"."IsInvalid9"
+       as "IsInvalid9", "JobCardTemplateProcesses"."ProcessNum10" as "ProcessNum10",
+       "JobCardTemplateProcesses"."ProcessName10" as "ProcessName10",
+       "JobCardTemplateProcesses"."TextOnJobCard10" as "TextOnJobCard10",
+       "JobCardTemplateProcesses"."StampNum10" as "StampNum10", "JobCardTemplateProcesses"."IsInvalid10"
+       as "IsInvalid10", "JobCardTemplateProcesses"."ProcessNum11" as "ProcessNum11",
+       "JobCardTemplateProcesses"."ProcessName11" as "ProcessName11",
+       "JobCardTemplateProcesses"."TextOnJobCard11" as "TextOnJobCard11",
+       "JobCardTemplateProcesses"."StampNum11" as "StampNum11", "JobCardTemplateProcesses"."IsInvalid11"
+       as "IsInvalid11", "JobCardTemplateProcesses"."ProcessNum12" as "ProcessNum12",
+       "JobCardTemplateProcesses"."ProcessName12" as "ProcessName12",
+       "JobCardTemplateProcesses"."TextOnJobCard12" as "TextOnJobCard12",
+       "JobCardTemplateProcesses"."StampNum12" as "StampNum12", "JobCardTemplateProcesses"."IsInvalid12"
+       as "IsInvalid12", "JobCardTemplateProcesses"."ProcessNum13" as "ProcessNum13",
+       "JobCardTemplateProcesses"."ProcessName13" as "ProcessName13",
+       "JobCardTemplateProcesses"."TextOnJobCard13" as "TextOnJobCard13",
+       "JobCardTemplateProcesses"."StampNum13" as "StampNum13", "JobCardTemplateProcesses"."IsInvalid13"
+       as "IsInvalid13", "JobCardTemplateProcesses"."ProcessNum14" as "ProcessNum14",
+       "JobCardTemplateProcesses"."ProcessName14" as "ProcessName14",
+       "JobCardTemplateProcesses"."TextOnJobCard14" as "TextOnJobCard14",
+       "JobCardTemplateProcesses"."StampNum14" as "StampNum14", "JobCardTemplateProcesses"."IsInvalid14"
+       as "IsInvalid14", "JobCardTemplateProcesses"."ProcessNum15" as "ProcessNum15",
+       "JobCardTemplateProcesses"."ProcessName15" as "ProcessName15",
+       "JobCardTemplateProcesses"."TextOnJobCard15" as "TextOnJobCard15",
+       "JobCardTemplateProcesses"."StampNum15" as "StampNum15", "JobCardTemplateProcesses"."IsInvalid15"
+       as "IsInvalid15", "JobCardTemplateProcesses"."ProcessNum16" as "ProcessNum16",
+       "JobCardTemplateProcesses"."ProcessName16" as "ProcessName16",
+       "JobCardTemplateProcesses"."TextOnJobCard16" as "TextOnJobCard16",
+       "JobCardTemplateProcesses"."StampNum16" as "StampNum16", "JobCardTemplateProcesses"."IsInvalid16"
+       as "IsInvalid16", "JobCardTemplateProcesses"."ProcessNum17" as "ProcessNum17",
+       "JobCardTemplateProcesses"."ProcessName17" as "ProcessName17",
+       "JobCardTemplateProcesses"."TextOnJobCard17" as "TextOnJobCard17",
+       "JobCardTemplateProcesses"."StampNum17" as "StampNum17", "JobCardTemplateProcesses"."IsInvalid17"
+       as "IsInvalid17", "JobCardTemplateProcesses"."ProcessNum18" as "ProcessNum18",
+       "JobCardTemplateProcesses"."ProcessName18" as "ProcessName18",
+       "JobCardTemplateProcesses"."TextOnJobCard18" as "TextOnJobCard18",
+       "JobCardTemplateProcesses"."StampNum18" as "StampNum18", "JobCardTemplateProcesses"."IsInvalid18"
+       as "IsInvalid18", "JobCardTemplateProcesses"."ProcessNum19" as "ProcessNum19",
+       "JobCardTemplateProcesses"."ProcessName19" as "ProcessName19",
+       "JobCardTemplateProcesses"."TextOnJobCard19" as "TextOnJobCard19",
+       "JobCardTemplateProcesses"."StampNum19" as "StampNum19", "JobCardTemplateProcesses"."IsInvalid19"
+       as "IsInvalid19", "JobCardTemplateProcesses"."ProcessNum20" as "ProcessNum20",
+       "JobCardTemplateProcesses"."ProcessName20" as "ProcessName20",
+       "JobCardTemplateProcesses"."TextOnJobCard20" as "TextOnJobCard20",
+       "JobCardTemplateProcesses"."StampNum20" as "StampNum20", "JobCardTemplateProcesses"."IsInvalid20"
+       as "IsInvalid20", "JobCardTemplateProcesses"."ProcessNum21" as "ProcessNum21",
+       "JobCardTemplateProcesses"."ProcessName21" as "ProcessName21",
+       "JobCardTemplateProcesses"."TextOnJobCard21" as "TextOnJobCard21",
+       "JobCardTemplateProcesses"."StampNum21" as "StampNum21", "JobCardTemplateProcesses"."IsInvalid21"
+       as "IsInvalid21", "JobCardTemplateProcesses"."ProcessNum22" as "ProcessNum22",
+       "JobCardTemplateProcesses"."ProcessName22" as "ProcessName22",
+       "JobCardTemplateProcesses"."TextOnJobCard22" as "TextOnJobCard22",
+       "JobCardTemplateProcesses"."StampNum22" as "StampNum22", "JobCardTemplateProcesses"."IsInvalid22"
+       as "IsInvalid22", "JobCardTemplateProcesses"."ProcessNum24" as "ProcessNum24",
+       "JobCardTemplateProcesses"."ProcessName24" as "ProcessName24",
+       "JobCardTemplateProcesses"."TextOnJobCard24" as "TextOnJobCard24",
+       "JobCardTemplateProcesses"."StampNum24" as "StampNum24", "JobCardTemplateProcesses"."IsInvalid24"
+       as "IsInvalid24", "JobCardTemplateProcesses"."ProcessNum25" as "ProcessNum25",
+       "JobCardTemplateProcesses"."ProcessName25" as "ProcessName25",
+       "JobCardTemplateProcesses"."TextOnJobCard25" as "TextOnJobCard25",
+       "JobCardTemplateProcesses"."StampNum25" as "StampNum25", "JobCardTemplateProcesses"."IsInvalid25"
+       as "IsInvalid25", "JobCardTemplateProcesses"."ProcessNum26" as "ProcessNum26",
+       "JobCardTemplateProcesses"."ProcessName26" as "ProcessName26",
+       "JobCardTemplateProcesses"."TextOnJobCard26" as "TextOnJobCard26",
+       "JobCardTemplateProcesses"."StampNum26" as "StampNum26", "JobCardTemplateProcesses"."IsInvalid26"
+       as "IsInvalid26", "JobCardTemplateProcesses"."ProcessNum27" as "ProcessNum27",
+       "JobCardTemplateProcesses"."ProcessName27" as "ProcessName27",
+       "JobCardTemplateProcesses"."TextOnJobCard27" as "TextOnJobCard27",
+       "JobCardTemplateProcesses"."StampNum27" as "StampNum27", "JobCardTemplateProcesses"."IsInvalid27"
+       as "IsInvalid27", "JobCardTemplateProcesses"."ProcessNum28" as "ProcessNum28",
+       "JobCardTemplateProcesses"."ProcessName28" as "ProcessName28",
+       "JobCardTemplateProcesses"."TextOnJobCard28" as "TextOnJobCard28",
+       "JobCardTemplateProcesses"."StampNum28" as "StampNum28", "JobCardTemplateProcesses"."IsInvalid28"
+       as "IsInvalid28", "JobCardTemplateProcesses"."ProcessNum29" as "ProcessNum29",
+       "JobCardTemplateProcesses"."ProcessName29" as "ProcessName29",
+       "JobCardTemplateProcesses"."TextOnJobCard29" as "TextOnJobCard29",
+       "JobCardTemplateProcesses"."StampNum29" as "StampNum29", "JobCardTemplateProcesses"."IsInvalid29"
+       as "IsInvalid29", "JobCardTemplateProcesses"."ProcessNum30" as "ProcessNum30",
+       "JobCardTemplateProcesses"."ProcessName30" as "ProcessName30",
+       "JobCardTemplateProcesses"."TextOnJobCard30" as "TextOnJobCard30",
+       "JobCardTemplateProcesses"."StampNum30" as "StampNum30", "JobCardTemplateProcesses"."IsInvalid30"
+       as "IsInvalid30", "JobCardTemplateProcesses"."ProcessNum23" as "ProcessNum23",
+       "JobCardTemplateProcesses"."ProcessName23" as "ProcessName23",
+       "JobCardTemplateProcesses"."TextOnJobCard23" as "TextOnJobCard23",
+       "JobCardTemplateProcesses"."StampNum23" as "StampNum23", "JobCardTemplateProcesses"."IsInvalid23"
+       as "IsInvalid23", "JobCardTemplateProcesses"."Position1" as "Position1",
+       "JobCardTemplateProcesses"."Position2" as "Position2", "JobCardTemplateProcesses"."Position3"
+       as "Position3", "JobCardTemplateProcesses"."Position4" as "Position4",
+       "JobCardTemplateProcesses"."Position5" as "Position5", "JobCardTemplateProcesses"."Position6"
+       as "Position6", "JobCardTemplateProcesses"."Position7" as "Position7",
+       "JobCardTemplateProcesses"."Position8" as "Position8", "JobCardTemplateProcesses"."Position9"
+       as "Position9", "JobCardTemplateProcesses"."Position10" as "Position10",
+       "JobCardTemplateProcesses"."Position11" as "Position11", "JobCardTemplateProcesses"."Position12"
+       as "Position12", "JobCardTemplateProcesses"."Position13" as "Position13",
+       "JobCardTemplateProcesses"."Position14" as "Position14", "JobCardTemplateProcesses"."Position15"
+       as "Position15", "JobCardTemplateProcesses"."Position16" as "Position16",
+       "JobCardTemplateProcesses"."Position17" as "Position17", "JobCardTemplateProcesses"."Position18"
+       as "Position18", "JobCardTemplateProcesses"."Position19" as "Position19",
+       "JobCardTemplateProcesses"."Position20" as "Position20", "JobCardTemplateProcesses"."Position21"
+       as "Position21", "JobCardTemplateProcesses"."Position22" as "Position22",
+       "JobCardTemplateProcesses"."Position23" as "Position23", "JobCardTemplateProcesses"."Position24"
+       as "Position24", "JobCardTemplateProcesses"."Position25" as "Position25",
+       "JobCardTemplateProcesses"."Position26" as "Position26", "JobCardTemplateProcesses"."Position27"
+       as "Position27", "JobCardTemplateProcesses"."Position28" as "Position28",
+       "JobCardTemplateProcesses"."Position29" as "Position29", "JobCardTemplateProcesses"."Position30"
+       as "Position30"
+  from "dbo"."JobCardTemplateProcesses" "JobCardTemplateProcesses"</value>
+  </data>
+  <data name="mercedesdb.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ibWVyY2VkZXNkYiI+PFZpZXcgTmFtZT0iQXNzZW1ibHlMaW5lcyI+PEZpZWxkIE5hbWU9ImlkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSm9iQ2FyZFRlbXBsYXRlSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBc3NlbWJseVNlY3Rpb25JZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik51bU9mRmluZGluZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZXF1ZW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlcG9ydFRlbXBsYXRlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlBhcnRzIj48RmllbGQgTmFtZT0iaWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJKb2JDYXJkVGVtcGxhdGVJZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFzc2VtYmx5U2VjdGlvbklkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTnVtT2ZQYXJ0cyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBhcnROdW0xIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcnREZXNjcmlwdGlvbjEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGV4dE9uSm9iQ2FyZDEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFydE51bTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFydERlc2NyaXB0aW9uMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXh0T25Kb2JDYXJkMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJ0TnVtMyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJ0RGVzY3JpcHRpb24zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcnROdW00IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcnREZXNjcmlwdGlvbjQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGV4dE9uSm9iQ2FyZDQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFydE51bTUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFydERlc2NyaXB0aW9uNSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXh0T25Kb2JDYXJkNSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJ0TnVtNiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJ0RGVzY3JpcHRpb242IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQ2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcnROdW03IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcnREZXNjcmlwdGlvbjciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGV4dE9uSm9iQ2FyZDciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFydE51bTgiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGFydERlc2NyaXB0aW9uOCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXh0T25Kb2JDYXJkOCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJ0TnVtOSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJ0RGVzY3JpcHRpb245IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQ5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcnROdW0xMCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQYXJ0RGVzY3JpcHRpb24xMCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXh0T25Kb2JDYXJkMTAiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUHJvY2Vzc2VzIj48RmllbGQgTmFtZT0iaWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJKb2JDYXJkVGVtcGxhdGVJZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFzc2VtYmx5U2VjdGlvbklkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhdGlvbk51bSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGF0aW9uTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOdW1PZlByb2Nlc3NlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOYW1lMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXh0T25Kb2JDYXJkMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXNJbnZhbGlkMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTnVtMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGV4dE9uSm9iQ2FyZDIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3RhbXBOdW0yIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvY2Vzc051bTMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvY2Vzc05hbWUzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN0YW1wTnVtMyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJc0ludmFsaWQzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW00IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOYW1lNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXh0T25Kb2JDYXJkNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXNJbnZhbGlkNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTnVtNSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGV4dE9uSm9iQ2FyZDUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3RhbXBOdW01IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvY2Vzc051bTYiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvY2Vzc05hbWU2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQ2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN0YW1wTnVtNiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJc0ludmFsaWQ2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW03IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOYW1lNyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXh0T25Kb2JDYXJkNyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXNJbnZhbGlkNyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTnVtOCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTgiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGV4dE9uSm9iQ2FyZDgiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3RhbXBOdW04IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDgiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvY2Vzc051bTkiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvY2Vzc05hbWU5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQ5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN0YW1wTnVtOSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJc0ludmFsaWQ5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xMCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTEwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxMCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTEwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDEwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTEyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTEyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDEyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xMyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxMyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTE0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTE0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDE0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xNSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTE1IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxNSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTE1IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDE1IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xNiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTE2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxNiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTE2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDE2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xNyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTE3IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxNyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTE3IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDE3IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xOCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTE4IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxOCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTE4IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDE4IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0xOSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTE5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQxOSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTE5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDE5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yMCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTIwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyMCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTIwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDIwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTIxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTIxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDIxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTIyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTIyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDIyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTI0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTI0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDI0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yNSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTI1IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyNSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTI1IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDI1IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yNiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTI2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyNiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTI2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDI2IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yNyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTI3IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyNyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTI3IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDI3IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yOCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTI4IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyOCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTI4IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDI4IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yOSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTI5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyOSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTI5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDI5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0zMCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTMwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQzMCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTMwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDMwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2Nlc3NOdW0yMyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9jZXNzTmFtZTIzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRleHRPbkpvYkNhcmQyMyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdGFtcE51bTIzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IklzSW52YWxpZDIzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMSIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMiIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMyIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uNCIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uNSIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uNiIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uNyIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uOCIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uOSIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMTAiIFR5cGU9IkludDE2IiAvPjxGaWVsZCBOYW1lPSJQb3NpdGlvbjExIiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iUG9zaXRpb24xMiIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMTMiIFR5cGU9IkludDE2IiAvPjxGaWVsZCBOYW1lPSJQb3NpdGlvbjE0IiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iUG9zaXRpb24xNSIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMTYiIFR5cGU9IkludDE2IiAvPjxGaWVsZCBOYW1lPSJQb3NpdGlvbjE3IiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iUG9zaXRpb24xOCIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMTkiIFR5cGU9IkludDE2IiAvPjxGaWVsZCBOYW1lPSJQb3NpdGlvbjIwIiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iUG9zaXRpb24yMSIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMjIiIFR5cGU9IkludDE2IiAvPjxGaWVsZCBOYW1lPSJQb3NpdGlvbjIzIiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iUG9zaXRpb24yNCIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMjUiIFR5cGU9IkludDE2IiAvPjxGaWVsZCBOYW1lPSJQb3NpdGlvbjI2IiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iUG9zaXRpb24yNyIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlBvc2l0aW9uMjgiIFR5cGU9IkludDE2IiAvPjxGaWVsZCBOYW1lPSJQb3NpdGlvbjI5IiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iUG9zaXRpb24zMCIgVHlwZT0iSW50MTYiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>using System.Windows.Forms;
+
+/*
+private void XRTableCell1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessNum1").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell2_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessNum2").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell3_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessNum3").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell4_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName4").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell5_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName5").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell6_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName6").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell7_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName7").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell8_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName8").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+
+private void XRTableCell9_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName9").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+
+private void XRTableCell10_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName10").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell11_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName11").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell12_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName12").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell13_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName13").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell14_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName14").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell15_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName15").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell16_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName16").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell17_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName17").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell18_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName18").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell19_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName19").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell20_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName20").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell21_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName21").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+
+private void XRTableCell22_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName22").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+
+private void XRTableCell23_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName23").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell24_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName24").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell25_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName25").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell26_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName26").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell27_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName27").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell28_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName28").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell29_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName29").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+private void XRTableCell30_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName30").ToString() == "") {
+		e.Cancel = true;
+	}
+}
+*/
+
+private void XRTableCell31_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	e.Cancel = true;
+
+	/*
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName30").ToString() == "") {
+		e.Cancel = true;
+	}
+	*/
+}
+
+private void XRTableCell32_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	e.Cancel = true;
+
+	/*
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName30").ToString() == "") {
+		e.Cancel = true;
+	}
+	*/
+}
+private void XRTableCell33_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	e.Cancel = true;
+	
+	/*
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName30").ToString() == "") {
+		e.Cancel = true;
+	}
+	*/
+}
+private void XRTableCell34_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	e.Cancel = true;
+
+	/*
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName30").ToString() == "") {
+		e.Cancel = true;
+	}
+	*/
+}
+private void XRTableCell35_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	e.Cancel = true;
+
+	/*
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("ProcessName30").ToString() == "") {
+		e.Cancel = true;
+	}
+	*/
+}
+
+
+private void Detail1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	DetailBand band = (DetailBand)sender;
+	
+	band.Height = 0;
+}
+
+private void xrLabel9_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	//XRLabel label = (XRLabel)sender;
+	//XtraReportBase report = label.Report;
+
+	//label.Text = report.GetCurrentColumnValue("ProcessNum3").ToString();
+
+}
+
+private void xrProcessRow1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfProcesses = Convert.ToInt32(report.GetCurrentColumnValue("NumOfProcesses"));
+	int numOfRows = numOfProcesses / 7;
+	if ((numOfProcesses % 7) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 1) {
+		e.Cancel = true;
+	}
+}
+
+private void xrProcessRow2_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+
+	XtraReportBase report = panel.Report;
+
+	int numOfProcesses = Convert.ToInt32(report.GetCurrentColumnValue("NumOfProcesses"));
+	int numOfRows = numOfProcesses / 7;
+	if ((numOfProcesses % 7) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 2) {
+		e.Cancel = true;
+	}
+}
+
+private void xrProcessRow3_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfProcesses = Convert.ToInt32(report.GetCurrentColumnValue("NumOfProcesses"));
+	int numOfRows = numOfProcesses / 7;
+	if ((numOfProcesses % 7) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 3) {
+		e.Cancel = true;
+	}
+}
+
+private void xrProcessRow4_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfProcesses = Convert.ToInt32(report.GetCurrentColumnValue("NumOfProcesses"));
+	int numOfRows = numOfProcesses / 7;
+	if ((numOfProcesses % 7) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 4) {
+		e.Cancel = true;
+	}
+}
+
+private void xrProcessRow5_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfProcesses = Convert.ToInt32(report.GetCurrentColumnValue("NumOfProcesses"));
+	int numOfRows = numOfProcesses / 7;
+	if ((numOfProcesses % 7) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 5) {
+		e.Cancel = true;
+	}
+}
+private void xrPartCell1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription1").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartCell2_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription2").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartCell3_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription3").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartCell4_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription4").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartCell5_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription5").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartCell6_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription6").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartCell7_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription7").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartCell8_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription8").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartCell9_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription9").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartCell10_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	if (report.GetCurrentColumnValue("PartDescription10").ToString() == "") {
+		e.Cancel = true;
+	}
+
+}
+
+private void xrPartRow1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfParts = Convert.ToInt32(report.GetCurrentColumnValue("NumOfParts"));
+	int numOfRows = numOfParts / 2;
+	if ((numOfParts % 2) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 1) {
+		e.Cancel = true;
+	}
+
+}
+private void xrPartRow2_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfParts = Convert.ToInt32(report.GetCurrentColumnValue("NumOfParts"));
+	int numOfRows = numOfParts / 2;
+	if ((numOfParts % 2) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 2) {
+		e.Cancel = true;
+	}
+}
+
+private void xrPartRow3_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfParts = Convert.ToInt32(report.GetCurrentColumnValue("NumOfParts"));
+	int numOfRows = numOfParts / 2;
+	if ((numOfParts % 2) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 3) {
+		e.Cancel = true;
+	}
+}
+
+private void xrPartRow5_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfParts = Convert.ToInt32(report.GetCurrentColumnValue("NumOfParts"));
+	int numOfRows = numOfParts / 2;
+	if ((numOfParts % 2) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 5) {
+		e.Cancel = true;
+	}
+}
+
+private void xrPartRow4_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfParts = Convert.ToInt32(report.GetCurrentColumnValue("NumOfParts"));
+	int numOfRows = numOfParts / 2;
+	if ((numOfParts % 2) &gt; 0) {
+		numOfRows++;
+	}
+
+	if (numOfRows &lt; 4) {
+		e.Cancel = true;
+	}
+}
+
+
+private void xrFindingRow_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableRow panel = (XRTableRow)sender;
+	XtraReportBase report = panel.Report;
+
+	int numOfFindings = Convert.ToInt32(report.GetCurrentColumnValue("NumOfFindings"));
+	int idx = Convert.ToInt32(panel.Tag.ToString());
+	if (idx &gt; numOfFindings) {
+		e.Cancel = true;
+	}
+}
+
+private void ProcessCell_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+	XRTableCell panel = (XRTableCell)sender;
+	XtraReportBase report = panel.Report;
+
+	int idx = Convert.ToInt32(panel.Tag.ToString());
+	int numOfProcesses = Convert.ToInt32(report.GetCurrentColumnValue("NumOfProcesses"));
+	//MessageBox.Show("idx: " + idx + " vs. numOfProcesses: " + numOfProcesses);	
+
+	if (idx &gt; numOfProcesses) {
+		e.Cancel = true;
+		return;
+	}
+	
+	string field = "IsInvalid" + idx;
+
+	if (report.GetCurrentColumnValue(field).ToString() == "Y") {
+		//TODO: create X sign
+		panel.BackColor = Color.Gray;
+	}
+}
+</value>
+  </data>
+</root>

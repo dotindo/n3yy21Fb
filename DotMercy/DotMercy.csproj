@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A4D9AA3-CB39-4B8F-A24B-034C5D982E72}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotMercy</RootNamespace>
+    <AssemblyName>DotMercy</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.3.10\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Presets, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxGauges.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Web, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Web, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxScheduler.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v14.2.Core, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxSpreadsheet.v14.2, Version=14.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterSuccess.aspx" />
+    <Content Include="App_Data\TopMenu.xml" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap\js\npm.js" />
+    <Content Include="Content\Images\AquaHeader.jpg" />
+    <Content Include="Content\Images\BlackGlassHeader.jpg" />
+    <Content Include="Content\Images\GlassHeader.jpg" />
+    <Content Include="Content\Images\PlasticBlueHeader.jpg" />
+    <Content Include="Content\Images\RedWineHeader.jpg" />
+    <Content Include="Content\Site.css" />
+    <Content Include="custom\AssemblySection.aspx" />
+    <Content Include="custom\CgisSync.aspx" />
+    <Content Include="custom\CheckList\CheckListExecuteProcess.aspx" />
+    <Content Include="custom\CheckList\CheckListInstanceInfo.aspx" />
+    <Content Include="custom\CheckList\CheckListTemplateInfo.aspx" />
+    <Content Include="custom\CheckList\CreateCheckListInstance.aspx" />
+    <Content Include="custom\DownloadFile.aspx" />
+    <Content Include="custom\FormFileManager.aspx" />
+    <Content Include="custom\GenerateJobCard.aspx" />
+    <Content Include="custom\IrregAlt\IAForm.aspx" />
+    <Content Include="custom\IrregAlt\ViewIrregAlt.aspx" />
+    <Content Include="custom\JCPage.aspx" />
+    <Content Include="custom\JobCard.aspx" />
+    <Content Include="custom\JobCardPc.aspx" />
+    <Content Include="custom\PackingList.aspx" />
+    <Content Include="custom\ProcessControlPlan.aspx" />
+    <Content Include="custom\ProcessSTA.aspx" />
+    <Content Include="custom\CPlanMulti.aspx" />
+    <Content Include="custom\ProductionSequence.aspx" />
+    <Content Include="custom\Report\ReportJC.aspx" />
+    <Content Include="custom\Report\RIC.aspx" />
+    <Content Include="custom\STAReason.aspx" />
+    <Content Include="custom\STAView.aspx" />
+    <Content Include="custom\Ric.aspx" />
+    <Content Include="custom\ToolManagement\ToolCalibration.aspx" />
+    <Content Include="custom\ToolManagement\ToolVerification.aspx" />
+    <Content Include="custom\VINNumberChecker.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Dynamic\List.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\new-tids-logo.png" />
+    <Content Include="index.aspx" />
+    <Content Include="lib\DevExpress\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ContentWithTargetPath Include="lib\DotWeb\DotWeb.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DotWeb.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DotWeb\DotWeb.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DotWeb.pdb</TargetPath>
+    </ContentWithTargetPath>
+  </ItemGroup>
+  <ItemGroup>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Charts.v14.2.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Charts.v14.2.Core.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Data.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Data.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Office.v14.2.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Office.v14.2.Core.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.PivotGrid.v14.2.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.PivotGrid.v14.2.Core.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Printing.v14.2.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Printing.v14.2.Core.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.RichEdit.v14.2.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.RichEdit.v14.2.Core.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.SpellChecker.v14.2.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.SpellChecker.v14.2.Core.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Spreadsheet.v14.2.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Spreadsheet.v14.2.Core.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Utils.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Utils.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.ASPxGauges.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.ASPxGauges.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.ASPxHtmlEditor.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.ASPxHtmlEditor.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.ASPxPivotGrid.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.ASPxPivotGrid.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.ASPxRichEdit.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.ASPxRichEdit.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.ASPxScheduler.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.ASPxScheduler.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.ASPxSpellChecker.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.ASPxSpellChecker.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.ASPxSpreadsheet.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.ASPxSpreadsheet.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.ASPxThemes.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.ASPxThemes.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.ASPxTreeList.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.ASPxTreeList.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.Web.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.Web.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.XtraCharts.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.XtraCharts.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.XtraCharts.v14.2.Web.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.XtraCharts.v14.2.Web.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.XtraGauges.v14.2.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.XtraGauges.v14.2.Core.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.XtraGauges.v14.2.Presets.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.XtraGauges.v14.2.Presets.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.XtraReports.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.XtraReports.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.XtraReports.v14.2.Web.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.XtraReports.v14.2.Web.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.XtraScheduler.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.XtraScheduler.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.XtraPivotGrid.v14.2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.XtraPivotGrid.v14.2.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="lib\DevExpress\DevExpress.XtraScheduler.v14.2.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>DevExpress.XtraScheduler.v14.2.Core.dll</TargetPath>
+    </ContentWithTargetPath>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Light.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Root.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\SampleFile\C250AMG PM05-2016.pdf" />
+    <Content Include="App_Data\SampleFile\ReportSummaryAlteration_C250AMG_0516.pdf" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\AppMercy.pubxml" />
+    <None Include="Properties\PublishProfiles\DotMercy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterSuccess.aspx.cs">
+      <DependentUpon>RegisterSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterSuccess.aspx.designer.cs">
+      <DependentUpon>RegisterSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\AssemblySection.aspx.cs">
+      <DependentUpon>AssemblySection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\AssemblySection.aspx.designer.cs">
+      <DependentUpon>AssemblySection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\CgisSync.aspx.cs">
+      <DependentUpon>CgisSync.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\CgisSync.aspx.designer.cs">
+      <DependentUpon>CgisSync.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\CheckList\CheckListExecuteProcess.aspx.cs">
+      <DependentUpon>CheckListExecuteProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\CheckList\CheckListExecuteProcess.aspx.designer.cs">
+      <DependentUpon>CheckListExecuteProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\CheckList\CheckListInstanceInfo.aspx.cs">
+      <DependentUpon>CheckListInstanceInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\CheckList\CheckListInstanceInfo.aspx.designer.cs">
+      <DependentUpon>CheckListInstanceInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\CheckList\CheckListTemplateInfo.aspx.cs">
+      <DependentUpon>CheckListTemplateInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\CheckList\CheckListTemplateInfo.aspx.designer.cs">
+      <DependentUpon>CheckListTemplateInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\CheckList\CreateCheckListInstance.aspx.cs">
+      <DependentUpon>CreateCheckListInstance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\CheckList\CreateCheckListInstance.aspx.designer.cs">
+      <DependentUpon>CreateCheckListInstance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\DownloadFile.aspx.cs">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\DownloadFile.aspx.designer.cs">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\FormFileManager.aspx.cs">
+      <DependentUpon>FormFileManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\FormFileManager.aspx.designer.cs">
+      <DependentUpon>FormFileManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\GenerateJobCard.aspx.cs">
+      <DependentUpon>GenerateJobCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\GenerateJobCard.aspx.designer.cs">
+      <DependentUpon>GenerateJobCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\IrregAlt\IAForm.aspx.cs">
+      <DependentUpon>IAForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\IrregAlt\IAForm.aspx.designer.cs">
+      <DependentUpon>IAForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\IrregAlt\ViewIrregAlt.aspx.cs">
+      <DependentUpon>ViewIrregAlt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\IrregAlt\ViewIrregAlt.aspx.designer.cs">
+      <DependentUpon>ViewIrregAlt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\JCPage.aspx.cs">
+      <DependentUpon>JCPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\JCPage.aspx.designer.cs">
+      <DependentUpon>JCPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\JobCard.aspx.cs">
+      <DependentUpon>JobCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\JobCard.aspx.designer.cs">
+      <DependentUpon>JobCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\JobCardPc.aspx.cs">
+      <DependentUpon>JobCardPc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\JobCardPc.aspx.designer.cs">
+      <DependentUpon>JobCardPc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\PackingList.aspx.cs">
+      <DependentUpon>PackingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\PackingList.aspx.designer.cs">
+      <DependentUpon>PackingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\ProcessControlPlan.aspx.cs">
+      <DependentUpon>ProcessControlPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\ProcessControlPlan.aspx.designer.cs">
+      <DependentUpon>ProcessControlPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\ProcessSTA.aspx.cs">
+      <DependentUpon>ProcessSTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\ProcessSTA.aspx.designer.cs">
+      <DependentUpon>ProcessSTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\CPlanMulti.aspx.cs">
+      <DependentUpon>CPlanMulti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\CPlanMulti.aspx.designer.cs">
+      <DependentUpon>CPlanMulti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\ProductionSequence.aspx.cs">
+      <DependentUpon>ProductionSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\ProductionSequence.aspx.designer.cs">
+      <DependentUpon>ProductionSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\JC2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\JC2.designer.cs">
+      <DependentUpon>JC2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\JCReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\JCReport.designer.cs">
+      <DependentUpon>JCReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\JCSub1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\JCSub1.designer.cs">
+      <DependentUpon>JCSub1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\JCSub2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\JCSub2.designer.cs">
+      <DependentUpon>JCSub2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\JCSub3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\JCSub3.designer.cs">
+      <DependentUpon>JCSub3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\JCSub4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\JCSub4.designer.cs">
+      <DependentUpon>JCSub4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\JCSubImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\JCSubImage.designer.cs">
+      <DependentUpon>JCSubImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\ReportJC.aspx.cs">
+      <DependentUpon>ReportJC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\Report\ReportJC.aspx.designer.cs">
+      <DependentUpon>ReportJC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\RIC.aspx.cs">
+      <DependentUpon>RIC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\Report\RIC.aspx.designer.cs">
+      <DependentUpon>RIC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\rptBackupJobCardPC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\rptBackupJobCardPC.Designer.cs">
+      <DependentUpon>rptBackupJobCardPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\rptJobCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\rptJobCard.Designer.cs">
+      <DependentUpon>rptJobCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\rptJobCardPC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\rptJobCardPC.Designer.cs">
+      <DependentUpon>rptJobCardPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\rptJobCardPCLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\rptJobCardPCLine.Designer.cs">
+      <DependentUpon>rptJobCardPCLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\rptMaterialList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\rptMaterialList.Designer.cs">
+      <DependentUpon>rptMaterialList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\rptRIC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\rptRIC.Designer.cs">
+      <DependentUpon>rptRIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Report\XtraReportJC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="custom\Report\XtraReportJC.Designer.cs">
+      <DependentUpon>XtraReportJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custom\STAReason.aspx.cs">
+      <DependentUpon>STAReason.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\STAReason.aspx.designer.cs">
+      <DependentUpon>STAReason.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\STAView.aspx.cs">
+      <DependentUpon>STAView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\STAView.aspx.designer.cs">
+      <DependentUpon>STAView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\Ric.aspx.cs">
+      <DependentUpon>Ric.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\Ric.aspx.designer.cs">
+      <DependentUpon>Ric.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\ToolManagement\ToolCalibration.aspx.cs">
+      <DependentUpon>ToolCalibration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\ToolManagement\ToolCalibration.aspx.designer.cs">
+      <DependentUpon>ToolCalibration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\ToolManagement\ToolVerification.aspx.cs">
+      <DependentUpon>ToolVerification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\ToolManagement\ToolVerification.aspx.designer.cs">
+      <DependentUpon>ToolVerification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom\VINNumberChecker.aspx.cs">
+      <DependentUpon>VINNumberChecker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom\VINNumberChecker.aspx.designer.cs">
+      <DependentUpon>VINNumberChecker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dynamic\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dynamic\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Root.master.cs">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root.master.designer.cs">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="custom\FileUpload\" />
+    <Folder Include="logs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="custom\Report\JC2.resx">
+      <DependentUpon>JC2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\JCReport.resx">
+      <DependentUpon>JCReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\JCSub1.resx">
+      <DependentUpon>JCSub1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\JCSub2.resx">
+      <DependentUpon>JCSub2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\JCSub3.resx">
+      <DependentUpon>JCSub3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\JCSub4.resx">
+      <DependentUpon>JCSub4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\JCSubImage.resx">
+      <DependentUpon>JCSubImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\rptBackupJobCardPC.resx">
+      <DependentUpon>rptBackupJobCardPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\rptJobCard.resx">
+      <DependentUpon>rptJobCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\rptJobCardPC.resx">
+      <DependentUpon>rptJobCardPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\rptJobCardPCLine.resx">
+      <DependentUpon>rptJobCardPCLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\rptMaterialList.resx">
+      <DependentUpon>rptMaterialList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\rptRIC.resx">
+      <DependentUpon>rptRIC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom\Report\XtraReportJC.resx">
+      <DependentUpon>XtraReportJC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\adminmercy\DotWeb\DotWeb\DotWeb.csproj">
+      <Project>{8cf552aa-80c6-4018-8be9-cd1c4a862c6a}</Project>
+      <Name>DotWeb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3327</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3327/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

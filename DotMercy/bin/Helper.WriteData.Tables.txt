@@ -1,0 +1,290 @@
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ChecklistDetails
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = RICStatus
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Organizations
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = PMDetail1
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ProgressMasters
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = PMDetail2
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ControlPlanDetail1
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = __MigrationHistory
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ItemTypes
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Categories
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Varians
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = VarianDetails
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Stations
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ControlPlan
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Alterations
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ControlPlanDetail
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = UserGroups
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = VehicleOrders
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Users
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = PackingMonthDetails
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Dialogs
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Brand
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Supplier
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ToolSetup
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ToolList
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = PackingListDetails
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ToolCalibration
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = PackingLists
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ToolVerification
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = PackingMonths
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = CalibrationType
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = PackingListDetails_tmp
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ToolCalibrationResult
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = FileType
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Test
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ToolVerificationResult
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = sysdiagrams
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Test123
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = AlterationDetails_tmp
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = AlterationDetails
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Coba
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Coba_Detail
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = DialogDetails_tmp
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = DialogDetails
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Materials
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = VehicleOrderDetails_tmp
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = VehicleOrderDetails
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Trolleys
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Defects
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = RecordImplemControl
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ChecklistTypes
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = RecordImplemControlDetail
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ApprovalTypes
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = RecordImplemControlDetail1
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ApprovalSeq
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ModelTypes
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = ChecklistProgresses
+TABLE_TYPE = BASE TABLE
+============================
+TABLE_CATALOG = mercedesdb
+TABLE_SCHEMA = dbo
+TABLE_NAME = Checklists
+TABLE_TYPE = BASE TABLE
+============================
