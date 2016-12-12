@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="PageTitle" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <script type="text/javascript">
+<%--    <script type="text/javascript">
     </script>
 
     <div class="container-fluid">
@@ -60,5 +60,5 @@
             </div>
         </div>
     </div>
-    </div>
+    </div>--%>
 </asp:Content>

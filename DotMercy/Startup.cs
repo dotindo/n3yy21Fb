@@ -7,9 +7,9 @@ using Owin;
 using DotWeb;
 using Microsoft.AspNet.Identity.Owin;
 
-[assembly: OwinStartup(typeof(DotWeb.Samples.Startup))]
+[assembly: OwinStartup(typeof(DotMercy.Startup))]
 
-namespace DotWeb.Samples
+namespace DotMercy
 {
     public class Startup
     {

@@ -13,18 +13,18 @@ namespace DotMercy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                string username = "admin";
-                gvNotification.DataSource = NotificationAppRepository.getNotification(username);
-                gvPendingTask.DataSource = PendingTaskRepository.getPendingTask(username);
-            }
-            catch (Exception Ex)
-            {
-                ScriptManager.RegisterClientScriptBlock(this, GetType(), "alertMessage", @"alert('Error: " + Ex.Message + " !');", true);
-            }
-            gvNotification.DataBind();
-            gvPendingTask.DataBind();
+            //try
+            //{
+            //    string username = "admin";
+            //    gvNotification.DataSource = NotificationAppRepository.getNotification(username);
+            //    gvPendingTask.DataSource = PendingTaskRepository.getPendingTask(username);
+            //}
+            //catch (Exception Ex)
+            //{
+            //    ScriptManager.RegisterClientScriptBlock(this, GetType(), "alertMessage", @"alert('Error: " + Ex.Message + " !');", true);
+            //}
+            //gvNotification.DataBind();
+            //gvPendingTask.DataBind();
         }
     }
 }
